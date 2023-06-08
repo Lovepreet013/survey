@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="greeting">Welcome To Survey App</h1>
+  <button class="start">Start</button>
+
+  <form id="surveyForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div>
+      <label for="q1">How satisfied are you with our products?</label>
+      <select id="q1" name="question1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="q2">How fair are the prices compared to similar retailers?</label>
+      <select id="q2" name="question2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="q3">How satisfied are you with the value for money of your purchase?</label>
+      <select id="q3" name="question3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="q4">On a scale of 1-10 how would you recommend us to your friends and family?</label>
+      <select id="q4" name="question4">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="q5">What could we do to improve our service?</label>
+      <textarea id="q5" name="question5" rows="4" cols="50"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+      
+  </form>
+  <h2 id="successMessage" class="alert" style="display: none;">
+    Thank you for submitting the survey
+  </h2>
+
+  <script src="script.js"></script>
+</body>
+</html>
